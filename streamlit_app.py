@@ -7,12 +7,204 @@ def set_theme(theme):
         st.markdown(
             """
             <style>
-            body { background: linear-gradient(135deg, #3C7CE2, #17A4AA); color: #000000; }
-            .stApp { background: linear-gradient(135deg, #3C7CE2, #17A4AA); }
-            .stNumberInput > div > div > input { width: 80px !important; background: #ffffff; color: #000000; }
-            .stCheckbox > div { margin-top: -10px; color: #000000; }
-            .stButton > button { background: #4CAF50; color: white; border: none; padding: 10px 24px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 16px; }
-            .stButton > button:hover { background-color: #45a049; }
+            body {
+                background: linear-gradient(135deg, #3C7CE2, #17A4AA);
+                color: #000000;
+            }
+            .stApp {
+                background: linear-gradient(135deg, #3C7CE2, #17A4AA);
+            }
+            .stNumberInput > div > div > input {
+                width: 80px !important;
+                background: #ffffff;
+                color: #000000;
+            }
+            .stCheckbox > div {
+                margin-top: -10px;
+                color: #000000;
+            }
+            .stButton > button {
+                background: #4CAF50;
+                color: white;
+                border: none;
+                padding: 10px 24px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 16px;
+            }
+            .stButton > button:hover {
+                background-color: #45a049;
+            }
+            </style>
+            """,
+            unsafe_allow_html=True
+        )
+    elif theme == "Dark":
+        st.markdown(
+            """
+            <style>
+            body {
+                background: #2E2E2E;
+                color: #FFFFFF;
+            }
+            .stApp {
+                background: #2E2E2E;
+            }
+            .stNumberInput > div > div > input {
+                width: 80px !important;
+                background: #555555;
+                color: #FFFFFF;
+            }
+            .stCheckbox > div, .stRadio > div, .stSelectbox > div, .stMultiSelect > div {
+                color: #FFFFFF !important;
+            }
+            .stMarkdown h1, .stMarkdown h2, .stMarkdown h3, .stMarkdown p, .stMarkdown ul, .stMarkdown li {
+                color: #FFFFFF !important;
+            }
+            .stButton > button {
+                background: #333333;
+                color: white;
+                border: none;
+                padding: 10px 24px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 16px;
+            }
+            .stButton > button:hover {
+                background-color: #444444;
+            }
+            </style>
+            """,
+            unsafe_allow_html=True
+        )
+    elif theme == "Light":
+        st.markdown(
+            """
+            <style>
+            body {
+                background: #FFFFFF;
+                color: #000000;
+            }
+            .stApp {
+                background: #FFFFFF;
+            }
+            .stNumberInput > div > div > input {
+                width: 80px !important;
+                background: #ffffff;
+                color: #000000;
+            }
+            .stCheckbox > div {
+                margin-top: -10px;
+                color: #000000;
+            }
+            .stButton > button {
+                background: #008CBA;
+                color: white;
+                border: none;
+                padding: 10px 24px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 16px;
+            }
+            .stButton > button:hover {
+                background-color: #007BB5;
+            }
+            </style>
+            """,
+            unsafe_allow_html=True
+        )
+    elif theme == "Blue Ocean":
+        st.markdown(
+            """
+            <style>
+            body {
+                background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+                color: #FFFFFF;
+            }
+            .stApp {
+                background: linear-gradient(135deg, #008CBA, #8434a5);
+            }
+            .stNumberInput > div > div > input {
+                width: 80px !important;
+                background: #ffffff;
+                color: #000000;
+            }
+            .stCheckbox > div, .stRadio > div, .stSelectbox > div, .stMultiSelect > div {
+                color: #FFFFFF !important;
+            }
+            .stMarkdown h1, .stMarkdown h2, .stMarkdown h3, .stMarkdown p, .stMarkdown ul, .stMarkdown li {
+                color: #FFFFFF !important;
+            }
+            .stButton > button {
+                background: #005f99;
+                color: white;
+                border: none;
+                padding: 10px 24px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 16px;
+            }
+            .stButton > button:hover {
+                background-color: #004080;
+            }
+            </style>
+            """,
+            unsafe_allow_html=True
+        )
+    elif theme == "Forest Green":
+        st.markdown(
+            """
+            <style>
+            body {
+                background: linear-gradient(135deg, #2e8b57 0%, #3cb371 100%);
+                color: #FFFFFF;
+            }
+            .stApp {
+                background: linear-gradient(135deg, #2e8b57 0%, #3cb371 100%);
+            }
+            .stNumberInput > div > div > input {
+                width: 80px !important;
+                background: #ffffff;
+                color: #000000;
+            }
+            .stCheckbox > div, .stRadio > div, .stSelectbox > div, .stMultiSelect > div {
+                color: #FFFFFF !important;
+            }
+            .stMarkdown h1, .stMarkdown h2, .stMarkdown h3, .stMarkdown p, .stMarkdown ul, .stMarkdown li {
+                color: #FFFFFF !important;
+            }
+            .stButton > button {
+                background: #228b22;
+                color: white;
+                border: none;
+                padding: 10px 24px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 16px;
+            }
+            .stButton > button:hover {
+                background-color: #006400;
+            }
             </style>
             """,
             unsafe_allow_html=True
