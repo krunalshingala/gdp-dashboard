@@ -1,7 +1,10 @@
+# app.py
+
 import streamlit as st
 import pandas as pd
+import math
 
-# long_ic_theme.py content
+# The content of long_ic_theme.py
 def set_theme(theme):
     if theme == "Gradient":
         st.markdown(
@@ -209,12 +212,10 @@ def set_theme(theme):
             """,
             unsafe_allow_html=True
         )
-    # Add other themes here...
 
-# long_IC_matrix.py content
+# The content of long_IC_matrix.py
 if 'wide_layout' not in st.session_state:
     st.session_state.wide_layout = False
-
 if 'allocation' not in st.session_state:
     st.session_state.allocation = 100
 
@@ -291,7 +292,7 @@ def update_allocation(allocation):
 
 def main():
     st.set_page_config(layout="wide" if st.session_state.wide_layout else "centered")
-
+    
     theme = st.selectbox("Theme", ["Gradient", "Dark", "Light", "Blue Ocean", "Forest Green"])
     set_theme(theme)
 
